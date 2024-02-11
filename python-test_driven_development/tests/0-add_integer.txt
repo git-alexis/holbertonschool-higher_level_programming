@@ -1,0 +1,61 @@
+    Correct Usage:
+    - Int
+
+        >>> print(add_integer(1, 2))
+        3
+
+        >>> print(add_integer(100, -2))
+        98
+
+        >>> print(add_integer(2))
+        100
+
+    - Float
+
+        >>> print(add_integer(10.4, -8))
+        2
+
+        >>> print(add_integer(97.3, 2.8))
+        100.1
+
+    Incorrect Usage:
+
+    >>> print(add_integer(10, "holberton"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> print(add_integer("abc", "def"))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer("school", 79))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(10, ["holberton"]))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> print(add_integer({"abc": ["cba"]}, "def"))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(("school"), 79))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(53 ,None))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> print(add_integer(None ,1))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(None, None))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer())
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
