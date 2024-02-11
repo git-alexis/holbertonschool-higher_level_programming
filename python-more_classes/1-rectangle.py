@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
-"""class that defines a Rectangle"""
+"""Rectangle class"""
 
 
 class Rectangle:
+
+    """class that defines a Rectangle"""
 
     def __init__(self, width=0, height=0):
         """
