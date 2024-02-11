@@ -24,7 +24,7 @@ This module defines a function addition between 2 arguments
         2
 
         >>> print(add_integer(97.3, 2.8))
-        100.1
+        99
 
     Incorrect Usage:
 
