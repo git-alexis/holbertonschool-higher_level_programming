@@ -87,6 +87,7 @@ class Rectangle(Base):
             print()
         for line in range(self.__height):
             print(" " * self.__x + "#" * self.__width, end="")
+            print()
 
     def __str__(self):
         """ Returns the string representation of the rectangle """
