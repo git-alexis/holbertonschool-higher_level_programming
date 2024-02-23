@@ -83,10 +83,10 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints the rectangle with the character # """
-        for line in range(self.__height):
-            for column in range(self.__width):
-                print("#", end="")
+        for blanck_line in range(self.__y):
             print()
+        for line in range(self.__height):
+            print(" " * self.__x + "#" * self.__width, end="")
 
     def __str__(self):
         """ Returns the string representation of the rectangle """
