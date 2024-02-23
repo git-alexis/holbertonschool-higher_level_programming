@@ -93,3 +93,18 @@ class Rectangle(Base):
         """ Returns the string representation of the rectangle """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """ Updates the attributes of the rectangle """
+        if args:
+            for index, arg in enumerate(args):
+                if index == 0:
+                    self.id = arg
+                elif index == 1:
+                    self.__width = arg
+                elif index == 2:
+                    self.__height = arg
+                elif index == 3:
+                    self.__x = arg
+                elif index == 4:
+                    self.__y = arg
