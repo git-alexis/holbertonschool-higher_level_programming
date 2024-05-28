@@ -1,4 +1,4 @@
-document.getElementById('toggle_header').onclick = function() {
+document.getElementById('toggle_header').addEventListener('click', function() {
   const header = document.querySelector('header');
   if (header.classList.contains('green')) {
     header.classList.remove('green');
@@ -7,4 +7,4 @@ document.getElementById('toggle_header').onclick = function() {
     header.classList.remove('red');
     header.classList.add('green');
   }
-};
+});
