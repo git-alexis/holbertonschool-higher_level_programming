@@ -2,6 +2,7 @@
 
 """ LockedClass class """
 
+
 class LockedClass:
 
     """ Restricted attribute assignment """
